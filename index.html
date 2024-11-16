@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Tailwind Project</title>
+</head>
+<body class="m-0 p-0 box-border">
+   
+    <!-- Navbar -->
+    <nav class= "font-mono border border-gray-800 p-2 m-2 rounded-lg flex justify-between">
+
+        <!-- Logo -->
+        <a href="#" id="brand" class="flex items-center gap-1">
+            <img src="assets/asset 0.png" alt="brand_logo">
+            <span class="font-semibold">Escape</span>
+        </a>
+        <!-- nav links -->
+        <div id="nav-menu" class="hidden min-[645px]:flex gap-12 items-center">
+            <a href="">Pricing</a>
+            <a href="">About Us</a>
+            <a href="">Docs</a>
+            <a href="">Blogs</a>
+        </div>
+        <!-- Menu button(for small screen)-->
+        <button onclick="handlemenu()" class="md:hidden">
+            <img src="assets/menu.png" height="20px" width="20px" alt="menu-icon"> 
+        </button>
+        <!-- Button(Login/Signup)  -->
+        <div class="hidden md:flex gap-4">
+            <button class="font-semibold border border-gray-800 px-3">Login</button>
+            <button class="font-semibold border border-gray-800 px-3">Signup</button>
+        </div>
+
+
+        <!-- Open menu icon(when someone click on menu button this div override the entire screen)  -->
+        <div id="nav-dialog" class="hidden fixed inset-0 bg-white z-10 md:hidden">
+            <!-- navbar -->
+            <div class="flex justify-between border border-gray-800 p-2 m-2">
+                <!-- Logo -->
+                <a href="#" id="brand" class="flex items-center gap-1 ">
+                    <img src="assets/asset 0.png" alt="brand_logo">
+                    <span class="font-semibold">Escape</span>
+                </a>
+                <!-- Close button(for small screen)-->
+                <button onclick="handlemenu()" class="md:hidden">
+                    <img src="assets/close.png" height="24px" width="24px" alt="menu-icon"> 
+                </button>
+            </div>
+            <!-- nav menu -->
+            <div class="flex flex-col gap-4 m-5 font-mono font-medium ">
+              <a href="#" class="p-3 hover:bg-gray-100 rounded-lg">Pricing</a>
+              <a href="#" class="p-3 hover:bg-gray-100 rounded-lg">About Us</a>
+              <a href="#" class="p-3 hover:bg-gray-100 rounded-lg">Docs</a>
+              <a href="#" class="p-3 hover:bg-gray-100 rounded-lg">Blogs</a>
+            </div>
+            <!-- Line -->
+            <div class="h-[1px] bg-gray-200"></div>
+            <!--Login/Signup  -->
+            <div class="m-2 p-3">
+                <button class="font-semibold border border-gray-800 px-3">Login</button>
+                <button class="font-semibold border border-gray-800 px-3">Signup</button>
+            </div>
+        </div>
+
+    </nav>
+
+
+    
+    
+
+
+
+    
+</body>
+</html>
+
+
