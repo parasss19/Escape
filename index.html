@@ -74,7 +74,9 @@
 
         <!-- Hero Section -->
         <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
-            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-16">
+            
+            <!-- Hero Container -->
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-16 flex flex-col sm:items-center sm:text-center sm:pt-12 sm:max-w-2xl">
                 <!--version element -->
                 <div id="version-text" class="font-custom-font flex items-center my-3 py-1 px-3 gap-2 border border-yellow-600 w-fit  rounded-lg bg-yellow-50 shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
                     <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-800"></div>  <!-- it is used for dot -->
@@ -82,9 +84,25 @@
                     <img class="group-hover:translate-x-1 transition duration-300" src="assets/right-arrow.png" height="20px" width="17px" alt="arrow image">
                 </div>
 
+                <!-- Icons  -->
+                <div class="hidden sm:flex gap-8 my-6 ">
+                    <div class="flex gap-2 justify-center text-[16px] text-gray-500">
+                      <img src="assets/source-code.png" height="20px" width="20px" alt="icon1-img">
+                      <p>Code Optional</p>
+                    </div>
+                    <div class="flex gap-2 justify-center text-[16px] text-gray-500">
+                        <img src="assets/drag.png" height="20px" width="20px" alt="icon1-img">
+                        <p>drag and drop builder</p>
+                    </div>
+                    <div class="flex gap-2 justify-center text-[16px] text-gray-500">
+                        <img src="assets/laptop.png" height="20px" width="20px" alt="icon1-img">
+                        <p>Windows, Mac, Linux</p>
+                    </div>
+                </div>
+
                 <!-- Heading and Paragraph -->
-                <h1 class="text-4xl font-custom-font font-semibold mt-4 leading-snug">Web app to desktop app in minutes</h1>
-                <p class="text-xl mt-4">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+                <h1 class="text-4xl font-custom-font font-semibold mt-4 leading-snug sm:text-6xl">Web app to desktop app in minutes</h1>
+                <p class="font-custom-font text-xl mt-4 sm:mt-8">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
 
                 <!-- Buttons -->
                 <div id="button-container" class="mt-12 flex flex-col sm:flex-row gap-4 font-custom-font">
@@ -92,6 +110,12 @@
                     <button class="border border-black py-3 px-8 font-semibold rounded-md">Read Docs</button>
                 </div>        
            </div>
+
+           <!-- Companies Slider  -->
+            
+
+
+
         </div>
 
 
