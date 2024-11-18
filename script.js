@@ -12,6 +12,8 @@ const line1 = document.getElementById('line1');
 const line2 = document.getElementById('line2');
 const line3 = document.getElementById('line3');
 
+const line4 = document.getElementById('line4');  //it is used for slider after bento cards
+
 //Note- eventlisteners are heavy for websites so we want only apply eventlisterners when elem is obervable so for this we make intersectinobserver which observe when elem is visible to user or not
 
 const initialTranslateLTR = -48*4;    //for line 1 and 3
@@ -51,3 +53,5 @@ function observerFunc(element, isLTR, speed){
 observerFunc(line1, true, 0.15);   //here isLTR = true it means cards moves L to R
 observerFunc(line2, false, 0.15);  //here isLTR = false it means cards moves R to L
 observerFunc(line3, true, 0.15);
+
+observerFunc(line4, true, 0.55);
