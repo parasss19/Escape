@@ -11,7 +11,7 @@
     h1,h2,h3{
       @apply font-custom-font font-medium text-gray-800
     }
-    /* custom class=container */
+    /* custom container */
     .container{
       @apply px-6 py-12 max-w-7xl mx-auto lg:px-8
     }
