@@ -1,8 +1,0 @@
-IT IS USED TO WRITE IMPORTANT POINT WHILE MAKING THE PROJECT
-
-1) We used [CSS PEEPER] chrome extension to download all the assests(images) from the PROJECT
-   so that we can use it in our project.
-
-2) We use [FONT AWESOME] for icons (add link inside head tag and paste the code of each icon u want in your code)
-
-3) 
