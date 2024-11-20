@@ -11,7 +11,7 @@
 <body class="m-0 p-0 box-border">
    
     <!-- Navbar -->
-    <nav class= "font-mono p-2 m-2 rounded-lg flex justify-between">
+    <nav class= "font-mono p-2 m-2 rounded-lg flex justify-between fixed top-0 left-0 right-0 z-20  bg-white/95 shadow-lg">
 
         <!-- Logo -->
         <a href="#" id="brand" class="flex items-center gap-1">
@@ -70,7 +70,7 @@
 
 
     <!-- Main Section -->
-    <main>
+    <main class="mt-16">
         <!-- Hero Section -->
         <div id="hero" class="min-h-screen ">
             
@@ -789,23 +789,33 @@
                </div>
             </div>
 
-
-
-
-
-
-                
-
-            
-
-            <div class="h-[1000px]"></div>
-
-
-
-
-
         </div>
     </main>
+
+
+    <!-- Footer -->
+    <div class="container flex flex-col gap-6">
+        <div class="px-8 py-12 border lg:border-none bg-gray-50 rounded-lg flex flex-col items-center gap-8 lg:flex-row-reverse">
+          <a class="font-custom-font font-light" href="#">Documentation</a>
+          <div class="flex items-center gap-6">
+            <a class="w-5 h-5 hover:-translate-y-1 transition-transform ease-linear" href="#"><img src="assets/twitter.png" alt=""></a>
+            <a class="w-5 h-5 hover:-translate-y-1 transition-transform ease-linear" href="#"><img src="assets/github (1).png" alt=""></a>
+          </div>
+          <div class="flex items-center gap-6 flex-1">
+            <img class="max-h-12 max-w-12" src="assets/asset 0.png" alt="">
+            <span class="font-semibold text-2xl">Escape</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center">
+            <div class="flex gap-2 items-center">
+               <img class="w-4 h-4" src="assets/ycombinator.png" alt="">
+               <p class="text-gray-600">A Y Combinator Company</p>
+            </div>
+            <p class="text-sm text-gray-500">© 2024 ToDesktop, Inc. All rights reserved.</p>
+        </div>
+
+    </div>
     
 </body>
 </html>
