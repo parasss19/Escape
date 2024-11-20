@@ -55,3 +55,25 @@ observerFunc(line2, false, 0.15);  //here isLTR = false it means cards moves R t
 observerFunc(line3, true, 0.15);
 
 observerFunc(line4, true, 0.55);
+
+
+
+//******************** Accordian Logics ************************
+const dtElement = document.querySelectorAll('dt');   //it will select all the 'dt' tag
+// console.log(dtElement);
+
+// Now for each dt tag we click we add "click" eventlistener to it
+dtElement.forEach((elem) =>{
+  //when we click dt(drop-arrow) we have to find its corresponding "dd"    
+  function find_dd_element(){
+    const ddId = elem.getAttribute('aria-controls'); // Get the ID of the associated 'dd'
+    const ddElement = document.getElementById(ddId); // Find the 'dd' element
+    const drop_icon = elem.querySelectorAll('image')[0]; //now we select drop-down img
+
+    // Toggle visibility of 'dd' and rotation of the icon
+    ddElement.classList.toggle("hidden");
+    drop_icon.classList.toggle('-rotate-180');
+  }
+
+  elem.addEventListener("click",find_dd_element)
+})
