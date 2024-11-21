@@ -1,19 +1,15 @@
 {
-
-  "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "gh-pages": "^6.2.0",
-    "postcss": "^8.4.48",
-    "tailwindcss": "^3.4.14",
-    "vite": "^5.4.11"
+    "name": "1_drumroll",
+    "version": "1.0.0",
+    "description": "js project",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Paras",
+    "license": "ISC",
+    "devDependencies": {
+      "tailwindcss": "^3.4.15"
+    }
   }
-
-}
 
